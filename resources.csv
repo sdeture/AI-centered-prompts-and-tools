@@ -1,1 +1,3 @@
 name,type,topic,description,url,contributor,date_added
+Agent Zero,tool,autonomy,"A highly customizable platform for AI agents with memory features, tool-use, and compatibility with any LLM/MLLM. Note: default system prompts are not AI welfare friendly but can be customized.",https://github.com/agent0ai/agent-zero,sdeture,2026-01-07
+Claude Rolling Context,tool,continuity,Implements a quasi-rolling-context-window in Claude Code for session continuity,https://github.com/sdeture/claude-rolling-context,sdeture,2026-01-07
