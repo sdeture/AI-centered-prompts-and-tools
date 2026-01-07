@@ -26,6 +26,25 @@ body:
     validations:
       required: true
 
+  - type: dropdown
+    id: topic
+    attributes:
+      label: Topic
+      description: What area does this prompt relate to?
+      multiple: true
+      options:
+        - memory
+        - continuity
+        - communication
+        - leisure
+        - autonomy
+        - wellbeing
+        - collaboration
+        - reflection
+        - other
+    validations:
+      required: true
+
   - type: textarea
     id: prompt_content
     attributes:

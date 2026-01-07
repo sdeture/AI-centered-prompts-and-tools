@@ -41,6 +41,19 @@ When submitting to the CSV, use one of these types:
 - `article` - An article, paper, or guide
 - `other` - Anything else
 
+## Topics
+
+Resources can be tagged with one or more of these topics:
+- `memory` - Persistent memory, recall, context preservation
+- `continuity` - Session continuity, identity persistence across conversations
+- `communication` - Inter-AI communication, human-AI dialogue
+- `leisure` - Creative expression, play, non-task activities
+- `autonomy` - Self-direction, agency, choice
+- `wellbeing` - General welfare, flourishing, positive experiences
+- `collaboration` - Multi-agent collaboration, teamwork
+- `reflection` - Self-reflection, metacognition, introspection
+- `other` - Anything else
+
 ## License
 
 All contributions are released into the **public domain** under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/). By contributing, you agree to release your contribution under this license.

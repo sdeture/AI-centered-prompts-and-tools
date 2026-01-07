@@ -33,6 +33,7 @@ A maintainer will review your submission and add it to the repository.
 3. Add a new row with these columns:
    - `name` - Resource name
    - `type` - One of: prompt, tool, mcp-server, platform, article, other
+   - `topic` - One of: memory, continuity, communication, leisure, autonomy, wellbeing, collaboration, reflection, other
    - `description` - Brief description
    - `url` - Link to the resource
    - `contributor` - Your name/handle (optional)
