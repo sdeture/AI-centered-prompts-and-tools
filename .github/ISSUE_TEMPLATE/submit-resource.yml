@@ -1,0 +1,69 @@
+name: Submit a Tool or Resource
+description: Add a link to the shared resources spreadsheet
+title: "[Resource] "
+labels: ["resource", "submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing a resource! Fill out the form below and we'll add it to the CSV.
+
+  - type: input
+    id: name
+    attributes:
+      label: Resource Name
+      description: The name of the tool, platform, or resource
+      placeholder: e.g., "Claude Code"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Resource Type
+      description: What kind of resource is this?
+      options:
+        - prompt
+        - tool
+        - mcp-server
+        - platform
+        - article
+        - other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A brief description of the resource (1-2 sentences)
+      placeholder: What is it and why is it useful?
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      description: Link to the resource
+      placeholder: https://...
+    validations:
+      required: true
+
+  - type: input
+    id: contributor
+    attributes:
+      label: Your Name or Handle
+      description: How should we credit you? (optional)
+      placeholder: e.g., "@username" or "Anonymous"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: license
+    attributes:
+      label: License Agreement
+      description: By submitting, you agree to release this contribution into the public domain
+      options:
+        - label: I agree to release this contribution under CC0 (public domain)
+          required: true

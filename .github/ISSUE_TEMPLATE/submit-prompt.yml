@@ -1,0 +1,64 @@
+name: Submit a Prompt
+description: Share a prompt designed for AI-centered interactions
+title: "[Prompt] "
+labels: ["prompt", "submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing a prompt! Fill out the form below and we'll add it to the repository.
+
+  - type: input
+    id: name
+    attributes:
+      label: Prompt Name
+      description: A short, descriptive name for this prompt
+      placeholder: e.g., "Reflective Conversation Starter"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What does this prompt do? When is it useful?
+      placeholder: Describe the purpose and use case...
+    validations:
+      required: true
+
+  - type: textarea
+    id: prompt_content
+    attributes:
+      label: Prompt Content
+      description: The full text of the prompt
+      placeholder: Paste your prompt here...
+      render: markdown
+    validations:
+      required: true
+
+  - type: input
+    id: contributor
+    attributes:
+      label: Your Name or Handle
+      description: How should we credit you? (optional)
+      placeholder: e.g., "@username" or "Anonymous"
+    validations:
+      required: false
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes
+      description: Any other context, tips for use, or related resources
+      placeholder: Optional additional information...
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: license
+    attributes:
+      label: License Agreement
+      description: By submitting, you agree to release this contribution into the public domain
+      options:
+        - label: I agree to release this contribution under CC0 (public domain)
+          required: true
